@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}           
+body {
+    background: rgb(63, 46, 219);
+    font-family: 'Roboto', sans-serif;
+}
+body header {
+    background:  rgb(37, 21, 161);
+    padding: 30px;
+    text-align: center;
+}
+body header div a {
+    color:black;
+    margin: 30px;
+}
+#wrapper {
+    text-align: center;
+}
+
+.links a {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    border-bottom:1px solid chartreuse;
+}
+.links a:hover {
+    color: darkturquoise;
+    transition:color 100ms ;                
+}
+#wrapper img {
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px;
+}
+#wrapper h1 {
+    margin-bottom: 20px;               
+}
+#wrapper li {
+    border-top: 0px;
+    margin: 10px;
+}
+.cards {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: darkmagenta;
+}
+
+
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card__prince {
+    background-color: darkmagenta;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;    
+}
+
+.modal-overlay {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;opacity: 0;
+    visibility: hidden;   
+}
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}

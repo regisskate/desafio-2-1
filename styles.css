@@ -56,7 +56,9 @@ body header div a {
     background-color: darkmagenta;
 }
 
-
+.card:hover {
+    transform: translateY(-7px);
+  }
 
 .card__content,
 .card__info {
